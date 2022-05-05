@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <nav className="navbar sticky-top navbar-light bg-dark">
-        <div className="container">
+        <div className="container justify-content-center justify-content-sm-start">
           <h1 className="navbar-brand text-light">Ricky and Morty</h1>
         </div>
       </nav>

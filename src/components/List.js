@@ -16,9 +16,9 @@ function List() {
   }, [characters.length]);
   return (
     <div>
-      <h2>Characters</h2>
+      <h2 className="text-center text-sm-start">Characters</h2>
 
-      <div className="row">
+      <div className="row justify-content-center">
         {loading ? (
           <div>Loading...</div>
         ) : (
