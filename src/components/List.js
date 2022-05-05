@@ -18,18 +18,20 @@ function List() {
     <div>
       <h2>Characters</h2>
 
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        characters.map((character) => (
-          <Character
-            key={character.id}
-            name={character.name}
-            origin={character.origin}
-            image={character.image}
-          />
-        ))
-      )}
+      <div className="row">
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          characters.map((character) => (
+            <Character
+              key={character.id}
+              name={character.name}
+              origin={character.origin}
+              image={character.image}
+            />
+          ))
+        )}
+      </div>
     </div>
   );
 }
